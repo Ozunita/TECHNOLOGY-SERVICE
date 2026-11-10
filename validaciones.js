@@ -87,6 +87,15 @@ formulario.addEventListener("reset", function () {
     }, 0);
 });
 
+// Mensaje de confirmación para indicar que el registro se ha realizado con éxito.
+document.getElementById("formulario").addEventListener("submit", function (event) {
+    event.preventDefault();
+
+    alert("La inscripción se ha realizado con éxito");
+
+    document.getElementById("formulario").reset();
+});
+
 // Mensaje textual para los errores de validación nativa del navegador.
 formulario.addEventListener("invalid", function(evento) {
     const campo = evento.target;
