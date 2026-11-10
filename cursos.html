@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cursos | Technology Service</title>
+    
+<link rel="stylesheet" type="text/css" href="cursos.css">
+</head>
+
+<body class="contenedor">
+    <header>
+        
+        <h1>TECHNOLOGY SERVICE</h1>
+        <img class="imagen" src="logo.png" alt="Logo Technology Service">
+    </header>
+
+    <nav aria-label="Navegación principal">
+        <a href="index.html"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 10 9-7 9 7v10a1 1 0 0 1-1 1h-5v-7H9v7H4a1 1 0 0 1-1-1z"/></svg><span>Inicio</span></a>
+        <a href="productos.html"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.4 12.4a2 2 0 0 0 2 1.6h9.7a2 2 0 0 0 2-1.6L23 6H6"/></svg><span>Productos</span></a>
+        <a href="cursos.html" aria-current="page"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg><span>Cursos</span></a>
+    </nav>
+
+    <main>
+        <section class="contenido1">
+            <h2>¿TE INTERESA APRENDER A MANEJAR DISPOSITIVOS Y DESARROLLAR SOLUCIONES DIGITALES?</h2>
+            <p>¡Nosotros podemos ayudarte! En Technology Service no solo ofrecemos a nuestros clientes
+                maravillosas ofertas de la tecnología vigente sino que también brindamos cursos de capacitación
+                que permiten estar al día con las tendencias e incluso ser parte de ellas.
+            </p>
+        </section>
+
+
+        <section class="contenido2">
+            <h2>APRENDE CON NOSOTROS</h2>
+
+            <div class="tabla-contenedor">
+                <table>
+                    <caption>CURSOS DISPONIBLES</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">CURSO</th>
+                            <th scope="col">DESCRIPCIÓN</th>
+                            <th scope="col">HORARIO</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">Desarrollo Web Full-Stack</th>
+                            <td>
+                                Frontend (HTML5, CSS3, JavaScript/React)
+                                y Backend (Node.js, Python, Java, PHP).
+                                Incluye accesibilidad y buenas prácticas.
+                            </td>
+                            <td>
+                                <span class="dias">Lunes a viernes</span>
+                                <span class="hora">10:00 - 13:00</span>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">Desarrollo de Aplicaciones Móviles</th>
+                            <td>
+                                Creación de aplicaciones móviles con
+                                Flutter, React Native, Kotlin y Swift.
+                            </td>
+                            <td>
+                                <span class="dias">Lunes, miércoles y jueves</span>
+                                <span class="hora">07:00 - 11:00</span>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">Manejo Avanzado de Dispositivos</th>
+                            <td>
+                                Capacitación para utilizar tablets,
+                                laptops y equipos tecnológicos.
+                            </td>
+                            <td>
+                                <span class="dias">Lunes, martes y miércoles</span>
+                                <span class="hora">12:00 - 15:00</span>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">Uso del Software Comercializado</th>
+                            <td>
+                                Capacitación personalizada sobre el uso
+                                de sistemas y plataformas de la empresa.
+                            </td>
+                            <td>
+                                <span class="dias">Lunes a viernes</span>
+                                <span class="hora">10:00 - 12:00</span>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+
+
+        <section class="contenido3">
+            <div class="distribucion-cursos"></div>
+            <!-- IMAGEN IZQUIERDA -->
+            <div class="imagen-curso">
+                <img src="cursoimagen1.png" alt="Cursos de desarrollo web y aplicaciones móviles">
+            </div>
+            <div class="registro">
+                <h2>INSCRIPCIÓN A CURSOS</h2>
+                <p>Completa tus datos para registrarte.</p>
+
+                <form id="formulario" name="Datos">
+
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" aria-describedby="mensaje" name="nombre" placeholder="Ingresa tu nombre" minlength="2"
+                        maxlength="50" autocomplete="given-name" required>
+
+                    <label for="apellido">Apellido</label>
+                    <input type="text" id="apellido" aria-describedby="mensaje" name="apellido" placeholder="Ingresa tu apellido" minlength="2"
+                        maxlength="50" autocomplete="family-name" required>
+
+                    <label for="correo">Correo electrónico</label>
+                    <input type="email" id="correo" aria-describedby="mensaje" name="correo" placeholder="ejemplo@correo.com" autocomplete="email"
+                        required>
+
+                    <label for="telefono">Número de teléfono</label>
+                    <input type="tel" id="telefono" aria-describedby="mensaje" name="telefono" placeholder="09XXXXXXXX" pattern="09[0-9]{8}"
+                        maxlength="10" title="Ingresa 10 dígitos, empezando con 09" autocomplete="tel" required>
+
+                    <label for="fecha">Fecha de inscripción</label>
+                    <input type="date" id="fecha" aria-describedby="mensaje" name="fecha" required>
+
+                    <label for="curso">Selecciona un curso</label>
+                    <select id="curso" aria-describedby="mensaje" name="curso" required>
+                        <option value="">Selecciona un curso</option>
+                        <option value="Desarrollo Web Full-Stack">
+                            Desarrollo Web Full-Stack
+                        </option>
+                        <option value="Desarrollo de Aplicaciones Móviles">
+                            Desarrollo de Aplicaciones Móviles
+                        </option>
+                        <option value="Manejo Avanzado de Dispositivos">
+                            Manejo Avanzado de Dispositivos
+                        </option>
+                        <option value="Uso del Software Comercializado">
+                            Uso del Software Comercializado
+                        </option>
+                    </select>
+
+                    <label for="expectativas">
+                        ¿Qué esperas aprender? (Opcional)
+                    </label>
+                    <textarea id="expectativas" name="expectativas" placeholder="Escribe tus expectativas..." rows="3"
+                        maxlength="500"></textarea>
+
+                    <button type="submit" class="btn-enviar">
+                        Registrarme
+                    </button>
+
+                    <button type="reset" class="btn-limpiar">
+                        Limpiar formulario
+                    </button>
+
+                    <p id="mensaje" role="status" aria-live="polite"></p>
+                </form>
+            </div>
+            <!-- IMAGEN DERECHA -->
+            <div class="imagen-curso">
+                <img src="cursoimagen2.png" alt="Cursos de manejo de dispositivos y software">
+            </div>
+        </section>
+
+
+        <aside>
+            <h2 class="titulo-redes">SÍGUENOS EN NUESTRAS REDES</h2>
+            <p class="redes-sociales"><b>Instagram:</b> @technology_service</p>
+            <p class="redes-sociales"><b>Facebook:</b> Technology Service</p>
+            <p class="redes-sociales"><b>TikTok:</b> @Technology_Service_Official</p>
+        </aside>
+
+        <footer>
+            <h2 class="titulo-contacto">CONTACTO</h2>
+            <p class="datos-contacto"><b>Dirección:</b> Portoviejo, 18 de Octubre entre Córdoba y 10 de Agosto </p>
+            <p class="datos-contacto"><b>Teléfono:</b> 097-523-3677</p>
+            <p class="datos-contacto"><b>Correo Electrónico:</b> technologyservice@gmail.com</p>
+        </footer>
+    </main>
+    <script src="validaciones.js"></script>
+</body>
+
+</html>
